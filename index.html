@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> মডিউল ৫ এর অ্যাসাইনমেন্ট </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+<!-- Create 10 buttons by Bootstrap Each button should have different colors and properties. -->
+<h3> 10 buttons by Bootstrap Each button have different colors and properties.</h3>
+<div>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+</div>
+<br><br><br>
+
+<!-- Create a card. -->
+<h3> Card develop top portion for image and bottom portion for description with Read more button which redirect to to the Wikipedia</h3>
+<div class="card" style="width:400px">
+    <img class="card-img-top" src="MountEverest.jpg" alt="Mount Everest">
+    <div class="card-body">
+        <h4 class="card-title">Mount Everest</h4>
+        <p class="card-text">
+            Mount Everest, the Earth's highest peak, stands at 29,032 feet (8,848 meters) above sea level, located in the Himalayas on the border between Nepal and Tibet. It was first successfully summited by Sir Edmund Hillary and Tenzing Norgay in 1953..</p>
+        <a href="https://en.wikipedia.org/wiki/Mount_Everest" class="btn btn-primary">More Details in Wikipedia</a>
+    </div>
+</div>
+<br><br><br>
+
+
+<!-- Create some form using form-group bootstrap class. -->
+<h3>Form develop with validation check-box option and submit </h3>
+<form class="was-validated">
+    <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Password</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <input type="radio" class="form-check-input" id="male" name="optradio" value="male" checked> Male
+    <label class="form-check-label" for="male"></label>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="female" name="optradio" value="female">Female
+        <label class="form-check-label" for="female"></label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="ndc" name="optradio" value="ndc" disabled>Not Disclosed
+        <label class="form-check-label" for="ndc"></label>
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+        <label class="form-check-label" for="myCheck">Do you agree for the next step ?</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+<br><br><br>
+
+
+<!-- Create some list with list-group bootstrap class. -->
+<h3>Develop list with hover and badge </h3>
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">Action item <span class="badge  bg-primary rounded-pill">12</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success d-flex justify-content-between align-items-center">Success item <span class="badge bg-success rounded-pill">32</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary d-flex justify-content-between align-items-center">Secondary item <span class="badge bg-secondary rounded-pill">1</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info d-flex justify-content-between align-items-center">Info item <span class="badge bg-info rounded-pill">24</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning d-flex justify-content-between align-items-center">Warning item <span class="badge bg-warning rounded-pill">2</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center">Danger item <span class="badge bg-danger rounded-pill">8</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary d-flex justify-content-between align-items-center">Primary item <span class="badge bg-primary rounded-pill">9</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark d-flex justify-content-between align-items-center">Dark item <span class="badge bg-dark rounded-pill">6</span></a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-lightd-flex justify-content-between align-items-center">Light item <span class="badge bg-light rounded-pill">2</span></a>
+</div>
+<br><br><br>
+
+
+<!-- Create a navbar with Bootstrap -->
+<h3>Develop Navbar</h3>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="Mount_Everest_logo.jpg" alt="Mount Everest Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br><br><br>
+
+<!-- Create a progress-bar with Bootstrap. -->
+<h3>Develop Progress Bar</h3>
+<div class="progress">
+    <div class="progress-bar bg-success" style="width:50%">
+       Finished 50%
+    </div>
+    <div class="progress-bar bg-info" style="width:20%">
+        Processing 20%
+    </div>
+    <div class="progress-bar bg-warning" style="width:10%">
+       Blocked 10%
+    </div>
+    <div class="progress-bar bg-danger" style="width:20%">
+        Fail 20%
+    </div>
+</div>
+<br><br><br>
+
+
+<!-- Create a pagination with Bootstrap. -->
+<h3>Develop Pagination</h3>
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<br><br><br>
+
+
+
+<!-- Carousel -->
+<h3>Develop Carousel</h3>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="MountEverest.jpg" alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="Mount_Everest_logo.jpg" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="MountEverest.jpg" alt="New York" class="d-block w-100">
+        </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<br><br><br>
+
+<!-- Create a dropdown with Bootstrap -->
+<h3>Develop dropdown</h3>
+<div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle dropend " data-bs-toggle="dropdown">Sony</button>
+        <ul class="dropdown-menu ">
+            <li><a class="dropdown-item" href="#">Tablet</a></li>
+            <li><a class="dropdown-item" href="#">Smartphone</a></li>
+        </ul>
+    </div>
+</div>
+<br><br><br>
+
+<!-- Create a table with Bootstrap. -->
+<h3>Develop Table</h3>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+        </tr>
+        <tr class="table-primary">
+            <td>Primary</td>
+            <td>Joe</td>
+            <td>joe@example.com</td>
+        </tr>
+        <tr class="table-success">
+            <td>Success</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr class="table-danger">
+            <td>Danger</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+        <tr class="table-info">
+            <td>Info</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+        <tr class="table-warning">
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+        </tr>
+        <tr class="table-active">
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+            <td>Secondary</td>
+            <td>Secondson</td>
+            <td>sec@example.com</td>
+        </tr>
+        <tr class="table-light">
+            <td>Light</td>
+            <td>Angie</td>
+            <td>angie@example.com</td>
+        </tr>
+        <tr class="table-dark">
+            <td>Dark</td>
+            <td>Bo</td>
+            <td>bo@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<!-- Add Bootstrap JS -->
+<script src="./js/bootstrap.bundle.js" ></script>
+
+</body>
+</html>
